@@ -94,12 +94,11 @@ const Bio = (props) => (
 
 const List = styled.ul`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
   padding-bottom: ${padding.xs};
 
   @media (min-width: ${breakpoints.md}) {
-    flex-direction: row;
+    justify-content: center;
     padding-bottom: 0;
   }
 
@@ -111,7 +110,8 @@ const List = styled.ul`
 const LinkStyled = styled.a`
   display: flex;
   align-items: center;
-  padding: ${padding.xxs} 0;
+  padding: ${padding.xxxs} 0;
+  margin-right: ${padding.xs};
   color: ${(p) => p.theme.light.accentSecondary};
   font-size: ${rhythm(0.41)};
   font-weight: bold;
