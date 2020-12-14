@@ -1,0 +1,5 @@
+{
+  "operation": "Invoke",
+  "payload": $util.toJson($ctx.args),
+  "version": "2018-05-29"
+}

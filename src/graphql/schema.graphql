@@ -1,0 +1,19 @@
+input SendMessageInput {
+  email: String!
+  message: String!
+  name: String!
+  subject: String!
+}
+
+type Query {
+  noop: String
+}
+
+type Mutation {
+  sendMessage(input: SendMessageInput!): Boolean!
+}
+
+schema {
+  mutation: Mutation
+  query: Query
+}

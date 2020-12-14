@@ -1,4 +1,4 @@
-.cache
-/public
-node_modules
-yarn-error.log
+.next/
+cdk.out/
+cdk.outputs.json
+node_modules/

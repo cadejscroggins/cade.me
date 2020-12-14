@@ -1,0 +1,18 @@
+{
+  "auth": {
+    "allowUnauthenticatedIdentities": true
+  },
+  "namespace": "cade",
+  "permissions": {
+    "auth": {
+      "unauthenticated": {
+        "api": ["*"]
+      }
+    },
+    "lambdas": {
+      "send-message": {
+        "ses": ["SendEmail"]
+      }
+    }
+  }
+}
