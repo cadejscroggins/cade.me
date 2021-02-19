@@ -1,6 +1,6 @@
+import * as C from '@chakra-ui/react';
 import React from 'react';
 import { NextSeo } from 'next-seo';
-import * as C from '@chakra-ui/react';
 import { useForm } from 'react-hook-form';
 import { useMutation } from '@apollo/client';
 import SEND_MESSAGE from '../graphql/mutations/send-message';
